@@ -11,6 +11,11 @@ const Index = props => (
                     <a>Redux State Example</a>
                 </Link>
             </li>
+            <li>
+                <Link href="/api/randomQuote">
+                    <a>API Example</a>
+                </Link>
+            </li>
             {props.shows.map(show => (
                 <li key={show.id}>
                     <Link href="/p/[id]" as={`/p/${show.id}`}>
