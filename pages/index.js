@@ -6,6 +6,11 @@ const Index = props => (
     <Layout>
         <h1>Batman TV Shows</h1>
         <ul>
+            <li>
+                <Link href="/page">
+                    <a>Redux State Example</a>
+                </Link>
+            </li>
             {props.shows.map(show => (
                 <li key={show.id}>
                     <Link href="/p/[id]" as={`/p/${show.id}`}>
